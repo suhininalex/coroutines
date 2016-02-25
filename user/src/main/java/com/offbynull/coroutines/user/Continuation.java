@@ -27,8 +27,9 @@ import java.util.LinkedList;
  * {@link #getContext() } can be used to pass data back and forth between the coroutine and its caller. <b>All other methods are for
  * internal use by the instrumentation logic and should not be used directly.</b>.
  * @author Kasra Faghihi
+ * @param <T> auxiliary generic for kotlinYield
  */
-public final class Continuation implements Serializable {
+public final class Continuation<T> implements Serializable {
     private static final long serialVersionUID = 2L;
     
     /**
